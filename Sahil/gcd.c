@@ -1,0 +1,40 @@
+#include<stdio.h>
+
+int gcd(int a,int b){
+
+int rem;
+
+if(b>a){
+    int temp=a;
+    a=b;
+    b=temp;
+}
+
+while(b!=0){
+int t1=b;
+b=a%b;
+a=t1;
+
+}
+printf("%d",a);
+
+return 0;
+
+}
+
+int main(){
+
+int num1,num2;
+
+printf("Enter the num1:");
+scanf("%d",&num1);
+
+printf("Enter the num2:");
+scanf("%d",&num2);
+
+
+
+gcd(num1,num2);
+
+    return 0;
+}
