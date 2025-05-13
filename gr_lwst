@@ -1,0 +1,16 @@
+#include<stdio.h>
+
+int main(){
+int gr,lw;
+int a,b,c,d;
+printf("Enter the numbers:\n");
+scanf("%d%d%d%d",&a,&b,&c,&d);
+
+gr=(a>b & a>c & a>d)?a:(b>c & b>d)?b:(c>d)?c:d;
+lw=(a<b & a<c & a<d)?a:(b<c & b<d)?b:(c<d)?c:d;
+
+
+printf("Sum of smallest and largest:%d",gr+lw);
+
+    return 0;
+}
