@@ -1,0 +1,21 @@
+#include<stdio.h>
+
+int main(){
+
+    int a,b;
+    printf("Enter the numbers:\n");
+    scanf("%d%d",&a,&b);
+int i=0;
+int largest=a>b?a:b;
+int step=largest;
+
+while(1){
+if(largest % a ==0 && largest % b==0) break;
+else largest=largest+step;
+
+}
+
+printf("LCM is:%d",largest);
+
+    return 0;
+}
