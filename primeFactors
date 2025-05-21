@@ -1,0 +1,28 @@
+#include<stdio.h>
+
+void function(int num,int a)
+{
+if(num==1){
+    return ;
+}
+else {
+
+    while(num%a!=0){
+        a++;
+    }
+    printf("%d\n",a);
+    function(num/a,2);
+}
+
+}
+
+int main(){
+int num;
+printf("Enter the number:");
+scanf("%d",&num);
+
+function(num,2);
+
+
+    return 0;
+}
